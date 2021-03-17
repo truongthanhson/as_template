@@ -9,14 +9,42 @@ fun createFragment(
 		projectData: ProjectTemplateData
 ) = """package 	${packageName};
 
+import android.os.Bundle;
+import android.view.View;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.lifecycle.ViewModelProvider;
+
 import com.ad.sakani.base.BaseFragment;
 import ${projectData.applicationPackage}.R;
 
+import dagger.hilt.android.AndroidEntryPoint;
+
+@AndroidEntryPoint
 public class ${entityName}Fragment extends BaseFragment {
+
+	private ${entityName}ViewModel viewModel;
+
 	@Override
 	protected int layoutResource() {
 		return R.layout.${layoutName.toLowerCase()};
 	}
+
+  	@Override
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+
+        initViewModel();
+        configView();
+        bindViewModel();
+    }
+
+	private void initViewModel() {
+		viewModel = new ViewModelProvider(this).get(${entityName}ViewModel.class);
+	}
+	private void configView() {}
+	private void bindViewModel() {}
 }
 
 """.trimIndent()

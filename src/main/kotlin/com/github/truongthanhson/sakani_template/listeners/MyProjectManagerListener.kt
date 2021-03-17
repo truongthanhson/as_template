@@ -1,6 +1,6 @@
-package com.github.truongthanhson.astemplate.listeners
+package com.github.truongthanhson.sakani_template.listeners
 
-import com.github.truongthanhson.astemplate.services.MyProjectService
+import com.github.truongthanhson.sakani_template.services.MyProjectService
 import com.intellij.openapi.components.service
 import com.intellij.openapi.project.Project
 import com.intellij.openapi.project.ProjectManagerListener

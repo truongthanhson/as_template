@@ -1,4 +1,4 @@
-package com.github.truongthanhson.astemplate
+package com.github.truongthanhson.sakani_template
 
 import com.intellij.AbstractBundle
 import org.jetbrains.annotations.NonNls

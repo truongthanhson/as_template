@@ -1,6 +1,6 @@
-package com.github.truongthanhson.astemplate.services
+package com.github.truongthanhson.sakani_template.services
 
-import com.github.truongthanhson.astemplate.MyBundle
+import com.github.truongthanhson.sakani_template.MyBundle
 import com.intellij.openapi.project.Project
 
 class MyProjectService(project: Project) {

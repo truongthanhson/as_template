@@ -3,7 +3,7 @@ package other.fragmentviewmodelSetup
 import com.android.tools.idea.wizard.template.ModuleTemplateData
 import com.android.tools.idea.wizard.template.RecipeExecutor
 import com.android.tools.idea.wizard.template.impl.activities.common.addAllKotlinDependencies
-import com.github.truongthanhson.astemplate.listeners.MyProjectManagerListener.Companion.projectInstance
+import com.github.truongthanhson.sakani_template.listeners.MyProjectManagerListener.Companion.projectInstance
 import com.intellij.lang.java.JavaLanguage
 import com.intellij.openapi.roots.ProjectRootManager
 import com.intellij.psi.PsiDirectory

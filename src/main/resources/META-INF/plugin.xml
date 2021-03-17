@@ -1,5 +1,5 @@
 <idea-plugin>
-    <id>com.github.truongthanhson.astemplate</id>
+    <id>com.github.truongthanhson.sakani_template</id>
     <name>sakani_template</name>
     <vendor>truongthanhson</vendor>
 
@@ -11,8 +11,8 @@
     <depends>com.intellij.modules.java</depends>
 
     <extensions defaultExtensionNs="com.intellij">
-        <applicationService serviceImplementation="com.github.truongthanhson.astemplate.services.MyApplicationService"/>
-        <projectService serviceImplementation="com.github.truongthanhson.astemplate.services.MyProjectService"/>
+        <applicationService serviceImplementation="com.github.truongthanhson.sakani_template.services.MyApplicationService"/>
+        <projectService serviceImplementation="com.github.truongthanhson.sakani_template.services.MyProjectService"/>
     </extensions>
 
 	<extensions defaultExtensionNs="com.android.tools.idea.wizard.template">
@@ -20,7 +20,7 @@
 	</extensions>
 
     <applicationListeners>
-        <listener class="com.github.truongthanhson.astemplate.listeners.MyProjectManagerListener"
+        <listener class="com.github.truongthanhson.sakani_template.listeners.MyProjectManagerListener"
                   topic="com.intellij.openapi.project.ProjectManagerListener"/>
     </applicationListeners>
 </idea-plugin>
