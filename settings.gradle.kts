@@ -1,1 +1,1 @@
-rootProject.name = "as_template"
+rootProject.name = "sakani_template"
